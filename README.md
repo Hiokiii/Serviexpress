@@ -1,1 +1,3 @@
 # Serviexpress
+Django
+Pillow
