@@ -1,0 +1,35 @@
+{% extends 'core/base.html' %}
+
+{% block contenido %}
+{% load static %}
+{% load humanize %}
+
+<div class="container">
+    <div class="row">
+        <div class="productos">
+            {% for p in productos %}
+            <div class="producto">
+        
+                <div class="contenedor_producto">
+                    {% if .imagen %}
+                    <img src="{% static 'core/img" alt="">
+                    {% endif %}
+                    <div class="detalle">
+                        <h6>{{ p.nombre_corto | capfirst }}</h6>
+                        <h5>{{ p.descripcion }}</h5>
+                        <h3>${{ p.precio_venta | intcomma }}</h3>
+                    </div>
+        
+                </div>
+        
+            </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+  </div>
+  
+
+{% endblock %}
+
+

@@ -1,0 +1,9 @@
+.Strong {
+    text-align: center;
+    color: gray;
+    font-family: impact;
+    font-size: 30px;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+    -webkit-text-fill-color: grey;
+    -webkit-text-stroke: 2px black;
+    }
